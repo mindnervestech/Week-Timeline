@@ -1,0 +1,79 @@
+<div class="row form-group">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <div class="col-xs-2">
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">Time</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">MON</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">TUE</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">WED</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">THU</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">FRI</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">SAT</p>
+                    </div>
+                </div>
+                <hr class="hr-color-margin"/>
+                <div>
+                    <div class="label-container">
+                      <p class="label-font-size-x-large">SUN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 table-scroll">
+                <div style="width:1493px;"><!-- 720(means 12 hours) + 54px / 1440(means 24 hours) + 54px-->
+                    <div id="Time" class="dropzone-container" style="padding: 0px 27px 0px 27px;height: 15px;margin-top: 39px;">
+                        <div ng-repeat="hour in hours" class="time-indicator">&nbsp;{{hour}}</div>
+                    </div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Monday" ng-click="addElement($event, 'Monday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Tuesday" ng-click="addElement($event, 'Tuesday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Wednesday" ng-click="addElement($event, 'Wednesday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Thursday" ng-click="addElement($event, 'Thursday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Friday" ng-click="addElement($event, 'Friday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Saturday" ng-click="addElement($event, 'Saturday')" class="dropzone-container"></div>
+                    <hr class="hr-color-margin"/>
+                    <div id="Sunday" ng-click="addElement($event, 'Sunday')" class="dropzone-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <button ng-click="saveEvents()" class="btn btn-primary">Save</button>
+</div>

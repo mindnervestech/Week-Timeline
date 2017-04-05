@@ -1,0 +1,60 @@
+td,th{
+    height: 55px;
+}
+.week-timeline-background-dark {
+    background: #3C3C3C !important;
+    color: white;
+    text-align: left;
+}
+.fixed {
+    position: absolute;
+    width: 115px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+
+
+.drag-circle {
+  	width: 54px;
+    height: 54px;
+    background-color: #29E;
+    color: white;
+    border-radius: 50%;
+    padding: 20px 8px;
+    position: absolute;
+}
+
+.drag-circle.switch-bg {
+  background-color: #F40;
+}
+
+.dropzone-container{
+    display: -webkit-box;
+    height: 54px;
+}
+
+.hr-color-margin{
+    margin: 3px;
+    border-top: 2px solid;
+    border-color: black;
+}
+
+.label-container{
+    height: 54px;
+    padding: 20px;
+}
+
+.label-font-size-x-large{
+    font-size: x-large;
+}
+
+.time-indicator {
+    background-color: #2299EE; 
+    margin-right: 57px;
+    width: 3px;
+}

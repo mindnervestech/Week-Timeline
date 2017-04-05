@@ -1,0 +1,20 @@
+<html>
+	<head>
+	<title>Week-Timeline</title>
+	
+	<link rel="stylesheet" href="/week-time-line_files/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/week-time-line_files/week-timeline/week-timeline.css" />
+	
+	<script src="/week-time-line_files/js/jquery.min.js"></script>
+
+	<script src="/week-time-line_files/js/app.module.js"></script>
+	<script src="/week-time-line_files/week-timeline/week-timeline.module.js"></script>
+	<script src="/week-time-line_files/week-timeline/week-timeline.directive.js"></script>
+	</head>
+	<body ng-app="app">
+		<div class="col-md-12 text-center">
+			<h2>Week Timeline</h2>
+			<week-timeline ng-model="eventList"></week-timeline>
+		</div>
+	</body>
+</html>
